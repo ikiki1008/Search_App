@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <GridLayout
+        android:id="@+id/GridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:columnCount="2"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/list_tile"
+            android:layout_columnWeight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="200dp"
+                android:layout_height="160dp" />
+
+            <ImageView
+                android:id="@+id/like"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/liked"/>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="108dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="140dp"
+                android:textSize="13sp"
+                android:textColor="#444444"
+                android:background="@drawable/bottom_bar_background"/>
+
+        </RelativeLayout>
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/dd"-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_marginEnd="5dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/q"-->
+<!--                android:layout_width="195dp"-->
+<!--                android:layout_height="120dp" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/ww"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:src="@drawable/liked"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/rr"-->
+<!--                android:layout_width="110dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:layout_marginTop="100dp"-->
+<!--                android:textSize="13sp"-->
+<!--                android:textColor="#444444"-->
+<!--                android:background="@drawable/bottom_bar_background"/>-->
+
+<!--        </RelativeLayout>-->
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
